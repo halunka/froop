@@ -4,7 +4,7 @@ require 'sinatra/base'
 class Froop < Sinatra::Base
   set :views, settings.root + '/../views'
   get '/' do
-    'Hello Froop!'
+    haml :index, :locals => {:title => 'Welcome'}
   end
 
   get '/login' do
