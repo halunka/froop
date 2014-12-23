@@ -1,4 +1,3 @@
-Then(/^I see "(.*?)"$/) do |page|
-  visit(page)
-  expect(current_path).to eq(page)
+Then(/^I see "(.*?)"$/) do |text|
+  expect(page).to have_content(text)
 end
