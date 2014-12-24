@@ -1,8 +1,18 @@
+env = ENV["RACK_ENV"] || "development"
+
 require 'sinatra/base'
+require 'haml'
+require 'bundler/setup'
 
 
 class Froop < Sinatra::Base
-  set :views, settings.root + '/../views'
+
+ # set :root, File.dirname(File.dirname(__FILE__))
+ # set :views, settings.root + '/views'
+  set :public_folder, settings.root + '/public'
+
+  p(public_folder)
+
   get '/' do
     haml :index, :locals => {:title => 'Welcome'}
   end
