@@ -19,7 +19,3 @@ When(/^I click on "(.*?)"$/) do |button|
   expect(page).to have_button button
   click_button button
 end
-
-Then(/^I should be on "(.*?)"$/) do |page|
-  expect(current_path).to eq page
-end

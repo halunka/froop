@@ -9,4 +9,4 @@ Feature: Log in
     When fill in "E-mail" with the right email address
     And I fill in "Password" with the right password
     And I click on "Log in"
-    Then I should be on "/"
+    Then I should see "HBFF's Fancy Foodie Blog"
