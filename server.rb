@@ -21,6 +21,10 @@ class Froop < Sinatra::Base
     haml :login, :locals => {:title => 'Log In'}
   end
 
+  post '/sessions/new' do
+    haml :index, :locals => {:title => 'Welcome'}
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end

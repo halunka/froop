@@ -5,7 +5,7 @@
 %main
   %h2
     Log In
-  %form{:action => '/self', :method => 'post'}
+  %form{:action => '/sessions/new', :method => 'post'}
     %input{:type => 'text', :placeholder => 'E-mail', :name => 'e-mail'}
     %input{:type => 'password', :placeholder => 'Password', :name => 'password'}
     %input{:type => 'submit', :name => 'submit', :value => 'Log in'}

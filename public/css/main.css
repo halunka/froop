@@ -25,6 +25,13 @@ html {
 
 }
 
+body a {
+
+  text-decoration: none;
+  color: inherit;
+  
+}
+
 header {
 
   font-family: "grafolita-script";
@@ -83,5 +90,15 @@ input[type="submit"] {
   clear: both;
   line-height: 0.6rem;
   cursor: pointer;
+
+}
+
+nav {
+
+  float: right;
+  font-family: "effra";
+  font-weight: 700;
+  font-size: 0.5em;
+  padding: 1.2rem;
 
 }
