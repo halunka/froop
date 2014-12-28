@@ -10,12 +10,17 @@ toggleNav.toggleClass = 'main-nav--open';
 
 toggleNav.init = function() {
   this.mainNav = document.querySelector('.main-nav');
+  this.mainNavShow = document.querySelector('.main-nav__show');
+  this.mainNavHide = document.querySelector('.main-nav__hide');
   this.setEventListeners();
 };
 
 toggleNav.setEventListeners = function() {
-  this.mainNav.addEventListener('click', function() {
+  this.mainNavShow.addEventListener('click', function() {
     toggleNav.toggle(); 
+  }, false);
+  this.mainNavHide.addEventListener('click', function() {
+    toggleNav.toggle();
   }, false);
 };
 

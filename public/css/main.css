@@ -39,7 +39,7 @@ header {
   font-size: 3em;
   color: rgb(67, 93, 112);
   height: 5rem;
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 1rem 0rem 1rem;
 
 }
 
@@ -93,6 +93,10 @@ input[type="submit"] {
 
 }
 
+/* ---------------------------------
+    Main Nav
+--------------------------------- */
+
 nav {
 
   float: right;
@@ -102,3 +106,70 @@ nav {
   padding: 1.2rem;
 
 }
+
+.main-nav__list {
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+  background-color: rgb(230, 230, 230);
+  transform: translateX(100vw);
+  transition: transform .2s;
+  
+}
+
+.main-nav--open .main-nav__list {
+
+  transform: translateX(0); 
+
+}
+
+.main-nav__item {
+
+  display: block;
+  float: left;
+  margin: 0;
+  padding: .5em 0;
+  width: 100%;
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.main-nav__item:hover {
+
+  background-color: rgb(210, 210, 210);
+  
+}
+
+.main-nav__hide {
+
+  z-index: 20;
+  float: right;
+  position: absolute;
+  background-image: url("../img/btn_hide_nav.svg");
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  right: 2rem;
+  top: 2rem;
+
+}
+  
+ul h2 {
+
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem;
+
+}
+

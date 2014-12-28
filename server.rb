@@ -25,6 +25,10 @@ class Froop < Sinatra::Base
     haml :index, :locals => {:title => 'Welcome'}
   end
 
+  get '/forms/browse' do
+    haml :"forms/browse", :locals => {:title => 'Browse Forms'}
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
